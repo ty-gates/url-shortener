@@ -44,3 +44,7 @@ def redirect_to_url(short_url):
     if url is None:
         return 'Invalid URL'
     return redirect(url.long_url)
+
+
+if __name__ == '__main__':
+    app.run(host="localhost", port=8080, debug=True)
